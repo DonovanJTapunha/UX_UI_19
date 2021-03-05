@@ -172,9 +172,9 @@ body{
 
 /********************BODY / WORK WORK WORK WORK*****************/
 
-.parent .box{
+.parent {
     
-    display: flex;
+    
     /* padding: 0px 10%; THIS IS WHAT SHRINKS THE SIDES OF THE SELECTOR */
     padding: 0px 5%;
     width:100%;
@@ -192,21 +192,29 @@ body{
     font-family: "roboto", sans-serif;
     font-size: 114px;
     font-weight: 700;
-    
-}
-.box div{
-    transform: translate(0, 117px);
-    
-    flex-direction: column;
-    flex-wrap: wrap;
+    margin-bottom: 117px;
 
 }
-
+ .box {
+    transform: translate(0, 117px); 
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    display: flex;
+    
+    /* max-width: 1200px;
+    display: grid;
+    grid-gap:35%;
+    grid-template-rows: repeat(auto-fit, minmax(1200, 1fr 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr  ));  */
+    
+} 
 
 
 .box img{
     
-    width: 804px;
+    width: 795px;
     height: 532px;
     background-image:image()
     
